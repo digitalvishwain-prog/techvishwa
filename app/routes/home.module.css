@@ -967,20 +967,107 @@
 
 @media (max-width: 768px) {
   .container {
-    padding: 0 var(--space-4);
+    padding: 0 var(--space-5);
   }
 
   .hero {
     min-height: auto;
-    padding: var(--space-7) 0;
+    padding: var(--space-8) 0;
   }
 
   .heroTitle {
-    font-size: 2rem;
+    font-size: 2.25rem;
+    line-height: 1.15;
   }
 
   .heroSubtitle {
+    font-size: var(--font-size-2);
+    line-height: 1.7;
+  }
+
+  .badge {
     font-size: var(--font-size-1);
+    padding: var(--space-2) var(--space-4);
+  }
+
+  .proofItem {
+    font-size: var(--font-size-2);
+  }
+
+  .sectionHeader h2 {
+    font-size: 2.25rem;
+    line-height: 1.2;
+  }
+
+  .sectionHeader p {
+    font-size: var(--font-size-2);
+    line-height: 1.7;
+  }
+
+  .serviceCard h3 {
+    font-size: var(--font-size-4);
+  }
+
+  .serviceFeatures li {
+    font-size: var(--font-size-2);
+  }
+
+  .testimonialQuote {
+    font-size: var(--font-size-2);
+    line-height: 1.8;
+  }
+
+  .authorName {
+    font-size: var(--font-size-2);
+  }
+
+  .authorLocation {
+    font-size: var(--font-size-1);
+  }
+
+  .storyContent h3 {
+    font-size: var(--font-size-4);
+  }
+
+  .storyContent p {
+    font-size: var(--font-size-2);
+  }
+
+  .benefitItem h4 {
+    font-size: var(--font-size-3);
+  }
+
+  .benefitItem p {
+    font-size: var(--font-size-2);
+  }
+
+  .leadText {
+    font-size: var(--font-size-2);
+    line-height: 1.8;
+  }
+
+  .aiFeature h4 {
+    font-size: var(--font-size-2);
+  }
+
+  .aiFeature p {
+    font-size: var(--font-size-1);
+  }
+
+  .ctaContent h2 {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .ctaContent p {
+    font-size: var(--font-size-2);
+    line-height: 1.7;
+  }
+
+  .ctaPrimary,
+  .ctaSecondary {
+    font-size: var(--font-size-2);
+    padding: var(--space-4) var(--space-5);
   }
 
   .heroCta {

@@ -437,19 +437,54 @@
 
 @media (max-width: 768px) {
   .container {
-    padding: 0 var(--space-4);
+    padding: 0 var(--space-5);
   }
 
   .hero {
-    padding: var(--space-7) 0 var(--space-6);
+    padding: var(--space-8) 0 var(--space-7);
   }
 
   .heroTitle {
-    font-size: 2rem;
+    font-size: 2.25rem;
+    line-height: 1.15;
   }
 
   .heroDescription {
+    font-size: var(--font-size-2);
+    line-height: 1.7;
+  }
+
+  .serviceTitle {
+    font-size: var(--font-size-5);
+  }
+
+  .servicePrice {
+    font-size: var(--font-size-3);
+  }
+
+  .bulletList li {
+    font-size: var(--font-size-2);
+  }
+
+  .typeTag {
     font-size: var(--font-size-1);
+  }
+
+  .outcomeBox p {
+    font-size: var(--font-size-2);
+  }
+
+  .note {
+    font-size: var(--font-size-2);
+  }
+
+  .faqQuestion {
+    font-size: var(--font-size-3);
+  }
+
+  .faqAnswer {
+    font-size: var(--font-size-2);
+    line-height: 1.7;
   }
 
   .serviceBlock {

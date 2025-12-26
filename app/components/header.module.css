@@ -140,6 +140,20 @@
   }
 
   .container {
-    padding: 0 var(--space-4);
+    padding: 0 var(--space-5);
+  }
+
+  .logo {
+    font-size: var(--font-size-5);
+  }
+
+  .navMobile .navLink {
+    font-size: var(--font-size-3);
+    padding: var(--space-4);
+  }
+
+  .navMobile .ctaButton {
+    font-size: var(--font-size-2);
+    padding: var(--space-4) var(--space-5);
   }
 }

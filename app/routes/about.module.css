@@ -360,19 +360,51 @@
 
 @media (max-width: 768px) {
   .container {
-    padding: 0 var(--space-4);
+    padding: 0 var(--space-5);
   }
 
   .hero {
-    padding: var(--space-7) 0;
+    padding: var(--space-8) 0;
   }
 
   .heroTitle {
-    font-size: 2rem;
+    font-size: 2.25rem;
+    line-height: 1.15;
   }
 
   .heroText p {
-    font-size: var(--font-size-1);
+    font-size: var(--font-size-2);
+    line-height: 1.7;
+  }
+
+  .mvCard h2 {
+    font-size: var(--font-size-5);
+  }
+
+  .mvCard p {
+    font-size: var(--font-size-2);
+    line-height: 1.7;
+  }
+
+  .sectionHeader h2 {
+    font-size: 2.25rem;
+  }
+
+  .valueCard h3 {
+    font-size: var(--font-size-4);
+  }
+
+  .valueCard p {
+    font-size: var(--font-size-2);
+    line-height: 1.7;
+  }
+
+  .locationInfo h3 {
+    font-size: var(--font-size-4);
+  }
+
+  .locationInfo p {
+    font-size: var(--font-size-2);
   }
 
   .valuesGrid,

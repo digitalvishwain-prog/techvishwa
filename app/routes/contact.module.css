@@ -354,23 +354,74 @@
 
 @media (max-width: 768px) {
   .container {
-    padding: 0 var(--space-4);
+    padding: 0 var(--space-5);
   }
 
   .hero {
-    padding: var(--space-7) 0 var(--space-6);
+    padding: var(--space-8) 0 var(--space-7);
   }
 
   .heroTitle {
-    font-size: 2rem;
+    font-size: 2.25rem;
+    line-height: 1.15;
   }
 
   .heroDescription {
+    font-size: var(--font-size-2);
+    line-height: 1.7;
+  }
+
+  .contactInfo h2 {
+    font-size: var(--font-size-5);
+  }
+
+  .cardContent h3 {
+    font-size: var(--font-size-3);
+  }
+
+  .contactLink {
+    font-size: var(--font-size-2);
+  }
+
+  .cardContent p {
     font-size: var(--font-size-1);
+  }
+
+  .locationsList li {
+    font-size: var(--font-size-2);
+    padding: var(--space-3) 0;
+  }
+
+  .indiaWide {
+    font-size: var(--font-size-2);
   }
 
   .formContainer {
     padding: var(--space-5);
+  }
+
+  .formContainer h2 {
+    font-size: var(--font-size-5);
+  }
+
+  .formSubtitle {
+    font-size: var(--font-size-2);
+  }
+
+  .formGroup label {
+    font-size: var(--font-size-2);
+  }
+
+  .formGroup input,
+  .formGroup select,
+  .formGroup textarea {
+    font-size: var(--font-size-2);
+    padding: var(--space-4) var(--space-4);
+  }
+
+  .submitButton {
+    font-size: var(--font-size-2);
+    padding: var(--space-4) var(--space-5);
   }
 
   .quickContact img {

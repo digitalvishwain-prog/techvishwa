@@ -296,20 +296,41 @@
 /* Responsive Design */
 @media (max-width: 768px) {
   .container {
-    padding: 0 var(--space-4);
+    padding: 0 var(--space-5);
   }
 
   .hero {
-    padding: var(--space-7) 0 var(--space-6);
+    padding: var(--space-8) 0 var(--space-7);
   }
 
   .heroTitle {
-    font-size: 2rem;
+    font-size: 2.25rem;
+    line-height: 1.15;
   }
 
-  .heroDescription,
+  .heroDescription {
+    font-size: var(--font-size-2);
+    line-height: 1.7;
+  }
+
   .closingSection p {
-    font-size: var(--font-size-1);
+    font-size: var(--font-size-2);
+    line-height: 1.7;
+  }
+
+  .storyTitle {
+    font-size: var(--font-size-4);
+  }
+
+  .storySection h4,
+  .outcome h4 {
+    font-size: var(--font-size-2);
+  }
+
+  .storySection p,
+  .outcome p {
+    font-size: var(--font-size-2);
+    line-height: 1.7;
   }
 
   .storiesGrid {
