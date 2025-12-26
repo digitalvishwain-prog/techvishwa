@@ -1,0 +1,28 @@
+.dialogContent {
+  max-width: 450px;
+}
+
+.dialogTitle {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  color: var(--color-accent-11);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+  margin-top: var(--space-4);
+}
+
+.formField {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.submitButton {
+  margin-top: var(--space-2);
+  width: 100%;
+}

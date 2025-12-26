@@ -86,17 +86,28 @@
 }
 
 .ctaButton {
-  background: linear-gradient(135deg, var(--color-accent-9), var(--color-accent-10));
-  color: var(--color-accent-contrast);
-  border: none;
+  background: var(--color-neutral-1);
+  color: var(--color-accent-9);
+  border: 1.5px solid var(--color-accent-9);
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-3);
   font-weight: 600;
-  transition: all 0.3s ease;
+  font-size: 0.875rem;
+  transition: all 0.2s ease;
   white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 .ctaButton:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  background: var(--color-accent-9);
+  color: var(--color-accent-contrast);
+  border-color: var(--color-accent-10);
+  box-shadow: 0 4px 12px rgba(109, 40, 217, 0.2);
+  transform: translateY(-1px);
 }
 
 .mobileMenuButton {

@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-# TechVishwa - Digital Agency Website here
+# TechVishwa - Digital Agency Website
 
 A modern, premium digital agency website built with React Router v7, TypeScript, and modern web technologies.
 
@@ -196,6 +195,3 @@ All rights reserved - TechVishwa
 ## Support
 
 For support, email contact@techvishwa.com or message us on WhatsApp.
-=======
-# techvishwa
->>>>>>> 88f984602589c9d5d7be48e6ffa6d1fb78a0ddca

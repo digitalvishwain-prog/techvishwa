@@ -3,6 +3,7 @@ import { Link } from "react-router";
 import { Header } from "../components/header";
 import { Footer } from "../components/footer";
 import { Globe, Target, Rocket, CheckCircle, MessageCircle, ArrowRight, Sparkles, TrendingUp, Zap } from "lucide-react";
+import { Button } from "../components/ui/button/button";
 import styles from "./services.module.css";
 import { useEffect, useRef } from "react";
 
@@ -115,25 +116,59 @@ export default function Services() {
                   <p className={styles.note}>
                     Final pricing depends on scope, number of pages, and specific requirements.
                   </p>
+                  
+
                 </div>
               </div>
               <div className={styles.serviceVisual}>
-                <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?w=700&h=800&fit=crop" alt="Website Development" />
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=700&h=800&fit=crop" alt="Website Development" />
                 <div className={styles.floatingBadge}>
                   <TrendingUp size={20} />
                   <span>Mobile-First Design</span>
                 </div>
+              </div>
+              <div className={styles.serviceActions}>
+                <Button 
+                  onClick={() => handleWhatsAppClick("Hi, I'm interested in Website Design & Development services.")}
+                  className={styles.actionButton}
+                >
+                  <MessageCircle size={18} />
+                  WhatsApp Us
+                </Button>
+                <Button 
+                  variant="outline"
+                  onClick={() => window.location.href = `tel:${PHONE_NUMBER}`}
+                  className={styles.actionButton}
+                >
+                  Call Now
+                </Button>
               </div>
             </div>
 
             {/* Social Media & Graphic Design */}
             <div className={`${styles.serviceBlock} ${styles.reverse} scroll-animate`}>
               <div className={styles.serviceVisual}>
-                <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=700&h=800&fit=crop" alt="Social Media Management" />
+                <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=700&h=800&fit=crop" alt="Social Media Management" />
                 <div className={styles.floatingBadge}>
                   <Sparkles size={20} />
-                  <span>Popular Choice</span>
+                  <span>Creative Posts</span>
                 </div>
+              </div>
+              <div className={styles.serviceActions}>
+                <Button 
+                  onClick={() => handleWhatsAppClick("Hi, I'm interested in Social Media & Graphic Design services.")}
+                  className={styles.actionButton}
+                >
+                  <MessageCircle size={18} />
+                  WhatsApp Us
+                </Button>
+                <Button 
+                  variant="outline"
+                  onClick={() => window.location.href = `tel:${PHONE_NUMBER}`}
+                  className={styles.actionButton}
+                >
+                  Call Now
+                </Button>
               </div>
               <div className={styles.serviceContent}>
                 <div className={styles.serviceHeader}>
@@ -169,6 +204,8 @@ export default function Services() {
                   <p className={styles.note}>
                     Final pricing depends on number of posts per month and content complexity.
                   </p>
+                  
+
                 </div>
               </div>
             </div>
@@ -217,14 +254,32 @@ export default function Services() {
                   <p className={styles.note}>
                     Final pricing depends on campaign goals, ad budget, and service scope.
                   </p>
+                  
+
                 </div>
               </div>
               <div className={styles.serviceVisual}>
                 <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=700&h=800&fit=crop" alt="Digital Marketing" />
                 <div className={styles.floatingBadge}>
-                  <Rocket size={20} />
-                  <span>Complete Solution</span>
+                  <Sparkles size={20} />
+                  <span>Popular Choice</span>
                 </div>
+              </div>
+              <div className={styles.serviceActions}>
+                <Button 
+                  onClick={() => handleWhatsAppClick("Hi, I'm interested in Complete Digital Marketing services.")}
+                  className={styles.actionButton}
+                >
+                  <MessageCircle size={18} />
+                  WhatsApp Us
+                </Button>
+                <Button 
+                  variant="outline"
+                  onClick={() => window.location.href = `tel:${PHONE_NUMBER}`}
+                  className={styles.actionButton}
+                >
+                  Call Now
+                </Button>
               </div>
             </div>
           </div>

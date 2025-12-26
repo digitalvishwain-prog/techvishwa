@@ -163,7 +163,19 @@ export default function Home() {
                   <li><CheckCircle size={18} /> Basic SEO foundation</li>
                   <li><CheckCircle size={18} /> Enquiry-focused content structure</li>
                 </ul>
-                <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?w=600&h=400&fit=crop" alt="Website Development" className={styles.serviceImage} />
+                <div className={styles.serviceImageWrapper}>
+                  <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?w=600&h=400&fit=crop" alt="Website Development" className={styles.serviceImage} />
+                  <div className={styles.serviceActions}>
+                    <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className={styles.actionWhatsapp}>
+                      <MessageCircle size={18} />
+                      WhatsApp
+                    </a>
+                    <a href="tel:+919404006526" className={styles.actionCall}>
+                      <Phone size={18} />
+                      Call Now
+                    </a>
+                  </div>
+                </div>
               </div>
 
               <div className={`${styles.serviceCard} ${styles.featured} scroll-animate delay-2`}>
@@ -184,7 +196,19 @@ export default function Home() {
                   <li><CheckCircle size={18} /> Posting support & page management</li>
                   <li><CheckCircle size={18} /> Brand consistency across posts</li>
                 </ul>
-                <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=600&h=400&fit=crop" alt="Social Media" className={styles.serviceImage} />
+                <div className={styles.serviceImageWrapper}>
+                  <img src="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=600&h=400&fit=crop" alt="Social Media" className={styles.serviceImage} />
+                  <div className={styles.serviceActions}>
+                    <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className={styles.actionWhatsapp}>
+                      <MessageCircle size={18} />
+                      WhatsApp
+                    </a>
+                    <a href="tel:+919404006526" className={styles.actionCall}>
+                      <Phone size={18} />
+                      Call Now
+                    </a>
+                  </div>
+                </div>
               </div>
 
               <div className={`${styles.serviceCard} scroll-animate delay-3`}>
@@ -201,7 +225,19 @@ export default function Home() {
                   <li><CheckCircle size={18} /> Social media + creative support</li>
                   <li><CheckCircle size={18} /> Basic reels/video support</li>
                 </ul>
-                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop" alt="Digital Marketing" className={styles.serviceImage} />
+                <div className={styles.serviceImageWrapper}>
+                  <img src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=600&h=400&fit=crop" alt="Digital Marketing" className={styles.serviceImage} />
+                  <div className={styles.serviceActions}>
+                    <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className={styles.actionWhatsapp}>
+                      <MessageCircle size={18} />
+                      WhatsApp
+                    </a>
+                    <a href="tel:+919404006526" className={styles.actionCall}>
+                      <Phone size={18} />
+                      Call Now
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
             <p className={`${styles.pricingNote} scroll-animate delay-4`}>

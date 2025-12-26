@@ -1,19 +1,14 @@
 import { Link } from "react-router";
-import { Menu, X } from "lucide-react";
+import { Menu, Phone } from "lucide-react";
 import { Button } from "./ui/button/button";
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet/sheet";
+import { CallbackFormDialog } from "./callback-form-dialog";
 import styles from "./header.module.css";
 import { useState } from "react";
 
-const PHONE_NUMBER = "+919404006526";
-
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
-  const handleWhatsAppClick = () => {
-    const message = encodeURIComponent("Hi TechVishwa, I'd like to discuss my business requirements.");
-    window.open(`https://wa.me/${PHONE_NUMBER}?text=${message}`, "_blank");
-  };
+  const [callbackDialogOpen, setCallbackDialogOpen] = useState(false);
 
   const navItems = [
     { to: "/", label: "Home" },
@@ -40,8 +35,9 @@ export function Header() {
               </li>
             ))}
           </ul>
-          <Button onClick={handleWhatsAppClick} className={styles.ctaButton}>
-            Talk to TechVishwa
+          <Button onClick={() => setCallbackDialogOpen(true)} size="sm" className={styles.ctaButton}>
+            <Phone size={16} />
+            Get a Call
           </Button>
         </nav>
 
@@ -62,11 +58,16 @@ export function Header() {
                   </li>
                 ))}
               </ul>
-              <Button onClick={handleWhatsAppClick}>Talk to TechVishwa</Button>
+              <Button onClick={() => { setCallbackDialogOpen(true); setMobileMenuOpen(false); }}>
+                <Phone size={16} />
+                Get a Call
+              </Button>
             </nav>
           </SheetContent>
         </Sheet>
       </div>
+      
+      <CallbackFormDialog open={callbackDialogOpen} onOpenChange={setCallbackDialogOpen} />
     </header>
   );
 }
