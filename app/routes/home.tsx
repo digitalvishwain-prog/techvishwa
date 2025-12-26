@@ -18,6 +18,9 @@ export default function Home() {
 
   useEffect(() => {
     if (typeof window === 'undefined') return;
+
+    // Add js-ready class to enable scroll animations
+    document.documentElement.classList.add('js-ready');
     
     observerRef.current = new IntersectionObserver(
       (entries) => {
@@ -33,7 +36,10 @@ export default function Home() {
     const elements = document.querySelectorAll('.scroll-animate');
     elements.forEach((el) => observerRef.current?.observe(el));
 
-    return () => observerRef.current?.disconnect();
+    return () => {
+      observerRef.current?.disconnect();
+      document.documentElement.classList.remove('js-ready');
+    };
   }, []);
 
   const whatsappMessage = encodeURIComponent("Hi TechVishwa! I'm interested in learning more about your services.");

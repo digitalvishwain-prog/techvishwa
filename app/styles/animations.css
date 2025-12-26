@@ -109,10 +109,17 @@
 }
 
 /* Scroll Animation Setup */
+/* Default: elements are visible */
 .scroll-animate {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* When JS is ready, hide elements that haven't been scrolled into view */
+.js-ready .scroll-animate:not(.visible) {
   opacity: 0;
   transform: translateY(30px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
 .scroll-animate.visible {
